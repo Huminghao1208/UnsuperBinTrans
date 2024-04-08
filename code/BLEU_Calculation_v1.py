@@ -4,7 +4,6 @@ import numpy as np
 from nltk import ngrams
 from collections import Counter
 
-
 ARM_translated_BB_Folder_Path = '/path/to/ARM_TO_x86_translated_basic_blocks_GDL_files/'
 x86_original_BB_Folder_Path = '/path/to/reference_x86_basic_blocks_GDL_files'
 
@@ -54,7 +53,6 @@ def count_clip_ngram(translation_u, list_of_reference_u, ngram=1):
         for k in ct_translation_u
     }
 
-
 def count_ngram(unigram, ngram=1):
     """
     Return
@@ -102,7 +100,7 @@ for arm_file in files:
     x86_file_full_path = os.path.join(x86_original_BB_Folder_Path, x86_GDL_file_name)
 
     with open(arm_full_path, "r", errors='ignore') as fp_arm_in, open(x86_file_full_path, "r",
-                                                                      errors='ignore') as fp_x86_in:
+                                                                       errors='ignore') as fp_x86_in:
         print('arm_file = ', arm_file)
         reference_x86_instrs = []
         translated_x86_instrs = []
@@ -150,3 +148,4 @@ print('average BLEU for ', total_lines, ' lines is = ', total_BLEU / total_lines
 
 
 print('total_GDL_with_diff_line_count = ', total_GDL_with_diff_line_count)
+
