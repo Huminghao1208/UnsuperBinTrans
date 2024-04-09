@@ -74,7 +74,7 @@ def main_train():
 
     # Logging/validation
     logging_group = parser.add_argument_group('logging', 'Logging and validation arguments')
-    logging_group.add_argument('--log_interval', type=int, default=1000, help='log at this interval (defaults to 1000)')
+    logging_group.add_argument('--log_interval', type=int, default=100, help='log at this interval (defaults to 1000)')
     logging_group.add_argument('--validation', nargs='+', default=(), help='use parallel corpora for validation')
     logging_group.add_argument('--validation_directions', nargs='+', default=['src2src', 'trg2trg', 'src2trg', 'trg2src'], help='validation directions')
     logging_group.add_argument('--validation_output', metavar='PREFIX', help='output validation translations with the given prefix')
@@ -334,7 +334,8 @@ class Trainer:
         # Compute loss
         t = time.time()
         loss = self.translator.score(src, trg, train=True)
-        self.loss += loss.data[0]
+        #self.loss += loss.data[0]
+        self.loss += loss.item()
         self.forward_time += time.time() - t
 
         # Backpropagate error + optimize
