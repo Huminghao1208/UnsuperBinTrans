@@ -1,0 +1,320 @@
+<OOV> byte
+
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+movzx eax byte ptr [rsp+<HEX>+year] <E>
+mov rax r1<VALUE>d <E> mov esi <VALUE> <E> mov r1<VALUE> <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> cmovns r1<VALUE>d r1<VALUE>d <E> sub r1<VALUE>d r1<VALUE>d <E> sub r1<VALUE>d r1<VALUE>
+jmp <ADDR> <E>
+call <FUNC> <E>
+mov rax <HEX> <E>
+movzx eax byte ptr [rsp+<HEX>+year] <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov eax r1<VALUE>d <E> mov edi <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+<OOV> <ADDR> <E>
+mov eax byte ptr [rsp+<HEX>+year] <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov eax r1<VALUE>d <E> mov eax <VALUE> <E>
+movzx eax byte ptr [rsp+<HEX>+year] <E>
+call <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+lea rax <OOV> [rsp+<HEX>+year] <E>
+jmp <ADDR> <E>
+mov r9 qword ptr [rsp+<HEX>+upcase] <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+lea rax <OOV> <E>
+<OOV> <OOV> ptr <OOV> <E>
+call <FUNC> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov eax <HEX> <E>
+lea rax <OOV> <E>
+movzx eax byte ptr [rsp+<HEX>+year] <E>
+<OOV> <OOV> ptr <OOV> <E>
+mov r9 qword ptr [rsp+<HEX>+upcase] <E>
+jmp <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov eax byte ptr [rsp+<HEX>+year] <E>
+mov r9 qword ptr [rsp+<HEX>+upcase] <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+jmp <ADDR> <E>
+mov rax <HEX> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+jmp <ADDR> <E>
+
+mov rax <HEX> <E>
+lea rax <OOV> <E> mov eax <VALUE> <E>
+mov rax <HEX> <E>
+<OOV> byte ptr [rsp+<HEX>+year] <HEX> <ADDR> <E>
+mov eax byte ptr [rsp+<HEX>+year] <ADDR> <ADDR> <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov rdx r1<VALUE>d <E> mov esi <VALUE> <E> mov r1<VALUE> <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> cmovns r1<VALUE>d r1<VALUE>d <E> xor r1<VALUE>d r1<VALUE>d <E> xor r1<VALUE>d r1<VALUE> <E> sub rax i <E> sub rax i <E> jmp <ADDR> <E>
+jmp <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+mov rax <HEX> <E>
+mov rax <HEX> <E>
+mov rax r1<VALUE>d <E> mov esi <VALUE> <E> mov rax <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> mov r1<VALUE>d r1<VALUE>d
+<OOV> <ADDR> <E>
+mov rax r1<VALUE>d <E> mov edi <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov rax byte
+mov rdx [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+jmp <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+jmp <ADDR> <E>
+lea rax <HEX> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+jmp <ADDR> <E>
+jmp <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+lea rax <OOV> [rsp+<HEX>+year] <E>
+lea rax <HEX> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+jmp <ADDR> <E>
+call <FUNC> <E>
+jmp <ADDR> <E>
+call <FUNC> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+call <FUNC> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+imul rax <HEX> <E>
+
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+mov r9 r1<VALUE>d <E> mov esi <VALUE> <E> mov rax <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> mov r1<VALUE>d r1<VALUE>d
+mov rax [rsp+<HEX>+maxsize] <E> mov edi <VALUE> <E> mov r1<VALUE> <VALUE> <E>
+mov rax byte ptr [rsp+<HEX>+year] <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov edx [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+jmp <ADDR> <E>
+lea eax <OOV> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E> cmp edx <HEX> <E> setl <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+jmp <ADDR> <E>
+jmp <ADDR> <E>
+jmp <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov rax <HEX> <E>
+mov rdx r1<VALUE>d <E> mov esi <VALUE> <E> mov rax <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> sub r1<VALUE>d r1<VALUE>d <E> sub r1<VALUE>d r1<VALUE>d <E> sub rax rax
+jmp <ADDR> <E>
+lea rax <OOV> <E>
+mov rax [rsp+<HEX>+tp] <E> mov esi <VALUE> <E> mov rax <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> mov r1<VALUE>d r1<VALUE>d <E> xor r1<VALUE>d r1<VALUE>d <E> xor r1<VALUE>d r1<VALUE>d <E> xor rax i <E> jmp <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+jmp <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov rdx r1<VALUE>d <E> mov esi <VALUE> <E> mov rax <VALUE> <E> mov edx ptr
+mov rax <HEX> <E>
+lea rax <OOV> <E> jmp <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov rax [rsp+<HEX>+tp] <E> mov esi <VALUE> <E> mov edx <VALUE> <E>
+jmp <ADDR> <E>
+mov rax r1<VALUE>d <E> mov esi <VALUE> <E> mov rax <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> cmovns r1<VALUE>d r1<VALUE>d <E> xor r1<VALUE>d r1<VALUE>d <E> xor rax r1<VALUE>d <E> xor rax i <E> sub rax i <E> jmp <ADDR> <E>
+jmp <ADDR> <E>
+lea rax <OOV> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+lea rax <HEX> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+jmp <ADDR> <E>
+jmp <ADDR> <E>
+mov rax <HEX> <E>
+lea rax <OOV> [rsp+<HEX>+year] <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+mov r9 qword ptr [rsp+<HEX>+upcase] <E>
+mov eax byte
+movzx eax byte ptr [rsp+<HEX>+year] <E>
+call <FUNC> <E>
+mov rdx r1<VALUE>d <E>
+<OOV> rax <OOV> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+mov rax <HEX> <E>
+jmp <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+mov r9 r1<VALUE>d <E> mov esi <VALUE> <E> mov rax <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> mov r1<VALUE>d r1<VALUE>d <E> sub r1<VALUE>d r1<VALUE>d <E> <OOV> <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+jmp <ADDR> <E>
+mov rax <OOV> <E> mov edi <VALUE> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E> cmp edx <HEX> <E> setl <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+jmp <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov eax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov eax <OOV> <E> mov edi <VALUE> <E>
+mov rdx r1<VALUE>d <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+jmp <ADDR> <E>
+mov rax <HEX> <E>
+lea rax <OOV> <E>
+lea rax <HEX> <E>
+mov r9 qword ptr [rsp+<HEX>+upcase] <E>
+mov rax <OOV> [rsp+<HEX>+year] <E>
+mov eax r1<VALUE>d <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+lea rax <HEX> <E>
+mov r9 qword ptr [rsp+<HEX>+upcase] <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <ADDR> <E>
+jmp <ADDR> <E>
+movzx eax byte ptr [rsp+<HEX>+year] <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+mov rdx r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov eax <HEX> <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+call <FUNC> <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+mov rdx r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov eax <HEX> <E>
+mov eax <HEX> <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+call <FUNC> <E>
+mov eax <HEX> <E>
+mov rdi qword
+mov r9 byte
+call <FUNC> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+<OOV> <OOV> ptr <OOV> <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov rax r1<VALUE>d <E> mov esi <VALUE> <E> mov r1<VALUE> <VALUE> <E>
+mov eax <HEX> <E>
+lea rax <HEX> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov digits_<VALUE> r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+jmp <ADDR> <E>
+mov rdx r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov eax [rsp+<HEX>+tp] <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+mov rdx r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+jmp <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+lea byte ptr [rsp+<HEX>+year] <HEX> <E>
+lea rax <HEX> <E>
+mov rax <HEX> <E>
+mov eax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov eax <HEX> <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+mov eax byte ptr [rsp+<HEX>+year] <ADDR> <E>
+mov eax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+lea rax <HEX> <E>
+mov eax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov eax <OOV> <E> mov edi <VALUE> <E>
+mov rdx r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov eax byte ptr [rsp+<HEX>+year] <ADDR> <ADDR> <E>
+mov rdx r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+lea rax <HEX> <E>
+call <ADDR> <E>
+lea <OOV> <OOV> <E>
+mov rax <HEX> <E>
+lea rax <HEX> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+lea rax <OOV> <E>
+mov rax <OOV> <E>
+mov r9 qword ptr [rsp+<HEX>+upcase] <E>
+mov eax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+lea rax <HEX> <E>
+mov rdx r1<VALUE>d <E> mov esi <VALUE> <E> mov r1<VALUE> <VALUE> <E>
+lea rax <HEX> <E>
+mov r9 qword ptr [rsp+<HEX>+upcase] <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+call <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov rax <HEX> <E>
+lea rax <OOV> [rsp+<HEX>+year] <E>
+mov eax byte ptr [f_<VALUE>+<VALUE>] <ADDR> <E>
+mov rdx r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov eax <HEX> <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+mov eax byte ptr [rsp+<HEX>+year] <ADDR> <E>
+jmp <ADDR> <E>
+mov rax <HEX> <E>
+mov eax <HEX> <E>
+mov eax byte ptr [rsp+<HEX>+year] <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <HEX> <ADDR> <E>
+mov eax [rsp+<HEX>+tp] <E>
+mov eax [rsp+<HEX>+tp] <E>
+mov eax <HEX> <E>
+mov edx <HEX> <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+mov eax [rsp+<HEX>+tp] <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+lea rax <HEX> <E>
+call <FUNC> <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+jmp <ADDR> <E>
+mov eax <HEX> <E>
+mov rdx [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov rdx [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+mov rax <HEX> <E>
+mov rax <HEX> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+mov rax qword ptr [rsp+<HEX>+year] <E>
+
+mov eax <HEX> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E> jmp <ADDR> <E>
+mov rax <HEX> <E>
+jmp <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx <VALUE> <E>
+lea rax <OOV> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+mov rax byte [rsp+<HEX>+year] <VALUE> <ADDR> <E>
+mov eax r1<VALUE>d <E> mov r1<VALUE>d <VALUE> <E>
+mov edx [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+jmp <ADDR> <E>
+mov rax <OOV> <E> mov edi <VALUE> <E>
+imul edx <HEX> <E>
+jmp <ADDR> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+mov rax <HEX> <E>
+mov eax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+lea rax <HEX> <E>
+jmp <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+lea rax <OOV> <E>
+mov eax r1<VALUE>d <E> mov eax <VALUE> <E>
+mov r1<VALUE>d qword ptr [rsp+<HEX>+upcase] <E>
+lea rax ptr [rsp+<HEX>+year] <VALUE> <ADDR> <E>
+mov byte ptr [rsp+<HEX>+year] <VALUE> <E>
+mov rax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E>
+mov rdx [rsp+<HEX>+maxsize] <E> mov esi <VALUE> <E> mov rdx <VALUE> <E>
+mov rdx r1<VALUE>d <E> mov esi <VALUE> <E> mov rax <VALUE> <E> mov r1<VALUE>d r1<VALUE>d <E> sub r1<VALUE>d r1<VALUE>d <E> sub r1<VALUE>d r1<VALUE>d <E> sub rax r1<VALUE>d <E> sub rax rax <E> sub rax rax <E> sub rax rax <E> jmp <ADDR> <E>
+mov rax <HEX> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov rdi r1<VALUE> <E> mov esi <HEX> <E> mov r1<VALUE> r1<VALUE> <E> call <FUNC> <E>
+mov eax byte ptr [rsp+<HEX>+year] <E>
+mov eax [rsp+<HEX>+tp] <E> mov edi <VALUE> <E> mov edx [rax+<HEX>] <E>
+mov eax byte ptr [rsp+<HEX>+year] <E>

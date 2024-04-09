@@ -4,7 +4,7 @@ DATA_DIR=../data
 BIN_DIR=../bin
 SRC_DIR=../src
 
-TEXT_DATA=$DATA_DIR/arm32
+TEXT_DATA=$DATA_DIR/train.arm32
 VECTOR_DATA=$DATA_DIR/arm32-vector.bin
 
 if [ ! -e $VECTOR_DATA ]; then
@@ -13,5 +13,5 @@ if [ ! -e $VECTOR_DATA ]; then
 	fi
   echo -----------------------------------------------------------------------------------------------------
   echo -- Training vectors...
-  time $BIN_DIR/word2vec -train $TEXT_DATA -output $VECTOR_DATA -cbow 1 -size 64 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 20 -binary 0 -iter 15
+  time $BIN_DIR/word2vec -train $TEXT_DATA -output $VECTOR_DATA -cbow 1 -size 100 -window 8 -negative 25 -hs 0 -sample 1e-4 -threads 30 -binary 0 -iter 15
 fi
