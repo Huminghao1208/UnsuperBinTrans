@@ -4,7 +4,7 @@
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # (at your option) any later version.
-# 
+#
 # This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
@@ -24,6 +24,7 @@ import numpy as np
 import sys
 import time
 
+
 def main_train():
     # Build argument parser
     parser = argparse.ArgumentParser(description='Train a neural machine translation model')
@@ -34,7 +35,7 @@ def main_train():
     corpora_group.add_argument('--trg', help='the target language monolingual corpus')
     corpora_group.add_argument('--src2trg', metavar=('SRC', 'TRG'), nargs=2, help='the source-to-target parallel corpus')
     corpora_group.add_argument('--trg2src', metavar=('TRG', 'SRC'), nargs=2, help='the target-to-source parallel corpus')
-    corpora_group.add_argument('--max_sentence_length', type=int, default=200, help='the maximum sentence length for training (defaults to 50)')
+    corpora_group.add_argument('--max_sentence_length', type=int, default=50, help='the maximum sentence length for training (defaults to 50)')
     corpora_group.add_argument('--cache', type=int, default=1000000, help='the cache size (in sentences) for corpus reading (defaults to 1000000)')
     corpora_group.add_argument('--cache_parallel', type=int, default=None, help='the cache size (in sentences) for parallel corpus reading')
 
@@ -64,12 +65,12 @@ def main_train():
     optimization_group.add_argument('--learning_rate', type=float, default=0.0002, help='the global learning rate (defaults to 0.0002)')
     optimization_group.add_argument('--dropout', metavar='PROB', type=float, default=0.3, help='dropout probability for the encoder/decoder (defaults to 0.3)')
     optimization_group.add_argument('--param_init', metavar='RANGE', type=float, default=0.1, help='uniform initialization in the specified range (defaults to 0.1,  0 for module specific default initialization)')
-    optimization_group.add_argument('--iterations', type=int, default=3, help='the number of training iterations (defaults to 300000)')
+    optimization_group.add_argument('--iterations', type=int, default=300000, help='the number of training iterations (defaults to 300000)')
 
     # Model saving
     saving_group = parser.add_argument_group('model saving', 'Arguments for saving the trained model')
     saving_group.add_argument('--save', metavar='PREFIX', help='save models with the given prefix')
-    saving_group.add_argument('--save_interval', type=int, default=1, help='save intermediate models at this interval')
+    saving_group.add_argument('--save_interval', type=int, default=0, help='save intermediate models at this interval')
 
     # Logging/validation
     logging_group = parser.add_argument_group('logging', 'Logging and validation arguments')
@@ -99,15 +100,6 @@ def main_train():
     if len(args.validation) % 2 != 0:
         print('--validation should have an even number of arguments (one pair for each validation set)')
         sys.exit(-1)
-
-    parser.batch=100
-    parser.save_interval=3
-    parser.src="data/arm32_corpus/arm32"
-    parser.trg="data/x86_corpus/x86"
-    parser.src_embeddings="data/arm32_emb/arm32_emb"
-    parser.trg_embeddings="data/x86_emb/x86_emb"
-    parser.save="arm32_to_x86"
-    parser.cuda=True
 
     # Select device
     device = devices.gpu if args.cuda else devices.cpu
@@ -342,8 +334,7 @@ class Trainer:
         # Compute loss
         t = time.time()
         loss = self.translator.score(src, trg, train=True)
-        #self.loss += loss.data[0]
-        self.loss += loss.item()  # Use item() instead of data[0]
+        self.loss += loss.data[0]
         self.forward_time += time.time() - t
 
         # Backpropagate error + optimize
@@ -433,4 +424,4 @@ class Logger:
                 for line in validator.translate():
                     print(line, file=f)
                 f.close()
-        sys.stdout.flush()   
+        sys.stdout.flush()
