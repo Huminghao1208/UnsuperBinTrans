@@ -109,8 +109,6 @@ def main_train():
     parser.save="arm32_to_x86"
     parser.cuda=True
 
-
-
     # Select device
     device = devices.gpu if args.cuda else devices.cpu
 
@@ -435,4 +433,4 @@ class Logger:
                 for line in validator.translate():
                     print(line, file=f)
                 f.close()
-        sys.stdout.flush()
+        sys.stdout.flush()   
