@@ -64,12 +64,12 @@ def main_train():
     optimization_group.add_argument('--learning_rate', type=float, default=0.0002, help='the global learning rate (defaults to 0.0002)')
     optimization_group.add_argument('--dropout', metavar='PROB', type=float, default=0.3, help='dropout probability for the encoder/decoder (defaults to 0.3)')
     optimization_group.add_argument('--param_init', metavar='RANGE', type=float, default=0.1, help='uniform initialization in the specified range (defaults to 0.1,  0 for module specific default initialization)')
-    optimization_group.add_argument('--iterations', type=int, default=300, help='the number of training iterations (defaults to 300000)')
+    optimization_group.add_argument('--iterations', type=int, default=3, help='the number of training iterations (defaults to 300000)')
 
     # Model saving
     saving_group = parser.add_argument_group('model saving', 'Arguments for saving the trained model')
     saving_group.add_argument('--save', metavar='PREFIX', help='save models with the given prefix')
-    saving_group.add_argument('--save_interval', type=int, default=100, help='save intermediate models at this interval')
+    saving_group.add_argument('--save_interval', type=int, default=1, help='save intermediate models at this interval')
 
     # Logging/validation
     logging_group = parser.add_argument_group('logging', 'Logging and validation arguments')
@@ -99,6 +99,17 @@ def main_train():
     if len(args.validation) % 2 != 0:
         print('--validation should have an even number of arguments (one pair for each validation set)')
         sys.exit(-1)
+
+    parser.batch=100
+    parser.save_interval=3
+    parser.src="data/arm32_corpus/arm32"
+    parser.trg="data/x86_corpus/x86"
+    parser.src_embeddings="data/arm32_emb/arm32_emb"
+    parser.trg_embeddings="data/x86_emb/x86_emb"
+    parser.save="arm32_to_x86"
+    parser.cuda=True
+
+
 
     # Select device
     device = devices.gpu if args.cuda else devices.cpu

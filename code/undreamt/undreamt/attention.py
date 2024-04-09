@@ -15,7 +15,6 @@
 
 import torch.nn as nn
 
-
 class GlobalAttention(nn.Module):
     def __init__(self, dim, alignment_function='general'):
         super(GlobalAttention, self).__init__()

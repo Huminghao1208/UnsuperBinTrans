@@ -8,4 +8,5 @@ arm32_EMB_DIR=$DATA_PATH/arm32_emb
 x86_EMB_DIR=$DATA_PATH/x86_emb
 
 
-python3 train.py --src $arm32_CORPUS_DIR/arm32 --trg $x86_CORPUS_DIR/x86 --src_embeddings $arm32_EMB_DIR/arm32.emb --trg_embeddings $x86_EMB_DIR/x86.emb --save arm32_to_x86 --cuda
+python3 train.py --src $arm32_CORPUS_DIR/arm32 --trg $x86_CORPUS_DIR/x86 --src_embeddings $arm32_EMB_DIR/arm32.emb --trg_embeddings $x86_EMB_DIR/x86.emb \
+--save arm32_to_x86 --save_interval 3 --batch 100 --cuda
