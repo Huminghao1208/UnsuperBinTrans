@@ -21,11 +21,11 @@
 # done
 
 
-for file in data/Evaluation/arm32_diffutils/*; do
+for file in data/Evaluation/arm32_coreutils/*; do
     if [ -f "$file" ]; then
         filename=$(basename "$file")
         python translate.py model/arm32_to_x86.it24000.src2trg.pth \
             --input "$file" \
-            --output "data/Evaluation/x86_diffutils_translated/$filename"
+            --output "data/Evaluation/x86_coreutils_translated/$filename"
     fi
 done
